@@ -1,0 +1,7 @@
+{
+  "region": "us-east-1",
+  "resourcesStackName": "sls-graphql-dev-r",
+  "iamRoleArnLambda": "arn:aws:iam::279527732391:role/sls-graphql-dev-r-IamRoleLambda-1E21F2XBJVOEU",
+  "authTokenSecret": "94C48C72FCE492D65D62776722417",
+  "apiGatewayApi": "sls-graphql"
+}

@@ -1,0 +1,6 @@
+{
+  "project": "sls-graphql",
+  "meta_bucket" : "sls-graphql-vulcan-team",
+  "meta_bucket_region" : "us-east-1",
+  "localDynamoDbEndpoint": "https://192.168.99.100:8000"
+}
