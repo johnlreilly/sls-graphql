@@ -85,7 +85,7 @@ export function getUser(username) {
         id
         name
         username
-        email,
+        email
         token
       }
     }`
