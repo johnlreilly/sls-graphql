@@ -1,0 +1,490 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"first",
+				"First"
+			],
+			[
+				"a",
+				"accountNumber"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/src/app/js/components/depts/edit.jsx",
+			"settings":
+			{
+				"buffer_size": 2632,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 207.0,
+		"last_filter": "prett",
+		"selected_items":
+		[
+			[
+				"prett",
+				"HTMLPrettify"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"json",
+				"JSFMT: Format the current file"
+			],
+			[
+				"jsf",
+				"JSFMT: Format the current file"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pre",
+				"HTMLPrettify"
+			],
+			[
+				"form",
+				"Format Code"
+			],
+			[
+				"j",
+				"JSFMT: Settings - Default"
+			],
+			[
+				"pret",
+				"HTMLPrettify"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ind",
+				"Indentation: Reindent Lines"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/components",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/components/depts"
+	],
+	"file_history":
+	[
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/components/depts/show.jsx",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/actions/constants.js",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/actions/users.js",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/actions/depts.js",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/components/depts/new.jsx",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/s-resources-cf.json",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/components/depts/edit.jsx",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/routes.jsx",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/components/depts/index.jsx",
+		"/Users/johnreilly/Library/Application Support/Sublime Text 3/Packages/jsfmt/jsfmt.sublime-settings",
+		"/Users/johnreilly/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/components/users/new.jsx",
+		"/Users/johnreilly/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/back/api/lib/graphql/collections/depts/mutations.js",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/back/api/lib/graphql/collections/depts/queries.js",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/back/api/lib/graphql/collections/depts/resolves.js",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/back/api/lib/graphql/collections/depts/type.js",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/back/api/lib/graphql/collections/depts/validate.js",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/back/api/lib/auth.js",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/actions/index.js",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/_meta/variables/s-variables-common.json",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/_meta/variables/s-variables-dev-useast1.json",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/s-project.json",
+		"/Users/johnreilly/alexa/alexa-local/alexa-app-server/examples/apps/wr-info/wr_id_helper.js",
+		"/Users/johnreilly/alexa/alexa-local/alexa-app-server/examples/apps/wr-info/index.js",
+		"/Users/johnreilly/alexa/alexa-local/alexa-app-server/examples/apps/wr-info/LambdaCognitoSampleCode.js",
+		"/Users/johnreilly/alexa/alexa-local/alexa-app-server/examples/apps/wr-info/test/test_wr_data_helper.js",
+		"/Users/johnreilly/alexa/alexa-local/alexa-app-server/examples/apps/wr-info/package.json",
+		"/Users/johnreilly/alexa/alexa-local/alexa-app-server/examples/apps/wr-info/npm-debug.log",
+		"/Users/johnreilly/alexa/alexa-local/alexa-app-server/examples/apps/faa-info/package.json",
+		"/Users/johnreilly/alexa/alexa-local/alexa-app-server/examples/apps/faa-info/index.js",
+		"/Users/johnreilly/alexa/alexa-local/alexa-app-server/examples/faa-info/index.js",
+		"/Users/johnreilly/alexa/alexa-local/alexa-app-server/examples/faa-info/test/test_faa_data_helper.js",
+		"/Users/johnreilly/alexa/faa-info/test/test_faa_data_helper.js",
+		"/Users/johnreilly/alexa/faa-info/faa_data_helper.js",
+		"/Users/johnreilly/Documents/workspace/jaws/loyalty/sls-alexa-demo/functions/points/handler.js",
+		"/Users/johnreilly/Documents/workspace/jaws/loyalty/sls-alexa-demo/functions/points/event.json",
+		"/Users/johnreilly/Documents/workspace/alexa-skills-kit-js-master3/samples/historyBuff/src/Archive.zip",
+		"/Users/johnreilly/Documents/workspace/jaws/loyalty/sls-loyalty-demo/functions/points/handler.js",
+		"/Users/johnreilly/Documents/workspace/jaws/loyalty/sls-loyalty-demo/_meta/resources/s-resources-cf-dev-useast1.json",
+		"/Users/johnreilly/Documents/workspace/jaws/loyalty/sls-loyalty-demo/functions/points/event.json",
+		"/Users/johnreilly/Documents/workspace/alexa-skills-kit-js-master3/samples/historyBuff/src/AlexaSkill.js",
+		"/Users/johnreilly/Documents/workspace/jaws/loyalty/serverless-starter/restApi/lib/index.js",
+		"/Users/johnreilly/Documents/workspace/jaws/jaws-park/loyalty/lib/index.js",
+		"/Users/johnreilly/Documents/workspace/park-loyalty-profile-show-2b17ec14-bde8-4077-bb3c-8de1bd975515/package.json",
+		"/Users/johnreilly/Documents/workspace/alexa-skills-kit-js-master3/samples/historyBuff/src/index.js",
+		"/Users/johnreilly/Documents/workspace/jaws/loyalty/sls-loyalty-demo/_meta/variables/s-variables-common.json",
+		"/Users/johnreilly/Documents/workspace/jaws/loyalty/sls-loyalty-demo/_meta/variables/s-variables-dev-useast1.json",
+		"/Users/johnreilly/Documents/workspace/jaws/loyalty/sls-loyalty-demo/_meta/variables/s-variables-dev.json",
+		"/Users/johnreilly/Documents/workspace/jaws/jaws-park/loyalty/lib/show.js",
+		"/Users/johnreilly/Documents/workspace/jaws/edesk/serverless-starter/node_modules/crypto-browserify/example/bundle.js",
+		"/Users/johnreilly/Documents/workspace/jaws/edesk/serverless-starter/node_modules/crypto-browserify/test/create-hash.js",
+		"/Users/johnreilly/Documents/workspace/jaws/edesk/serverless-starter/restApi/lib/index.js",
+		"/Users/johnreilly/Documents/workspace/jaws/edesk/serverless-starter/node_modules/crypto-browserify/test/sign.js",
+		"/Users/johnreilly/Documents/workspace/jaws/edesk/serverless-starter/node_modules/crypto-browserify/test/index.js",
+		"/Users/johnreilly/Documents/workspace/jaws/edesk/serverless-starter/node_modules/crypto-browserify/test/public-encrypt.js",
+		"/Users/johnreilly/Documents/workspace/jaws/edesk/serverless-starter/restApi/multi/edesk/handler.js",
+		"/Users/johnreilly/Documents/workspace/jaws/edesk/serverless-starter/restApi/single/handler.js",
+		"/Users/johnreilly/Documents/workspace/jaws/edesk/serverless-starter/restApi/single/s-function.json",
+		"/Users/johnreilly/Documents/workspace/jaws/edesk/serverless-starter/restApi/multi/edesk/s-function.json",
+		"/Users/johnreilly/Documents/workspace/jaws/edesk/serverless-starter/restApi/single/event.json",
+		"/Users/johnreilly/Documents/AEM60/crx-quickstart/bin/keypairtoolthingy",
+		"/Users/johnreilly/Documents/workspace/jaws/okta/serverless-starter/restApi/multi/create/s-function.json",
+		"/Users/johnreilly/Documents/AAAA POC/sampleBrandStandards.json",
+		"/Users/johnreilly/Documents/workspace/sls/sls-whg-ftp/ftp/lib/index.js",
+		"/Users/johnreilly/Documents/aem61full/crx-quickstart/bin/start.bat",
+		"/Users/johnreilly/Documents/workspace/jaws/graph-orig/serverless-graphql-blog/_meta/variables/s-variables-common.json",
+		"/Users/johnreilly/Documents/workspace/headerMyPortal.html",
+		"/Users/johnreilly/Documents/workspace/ajax.html",
+		"/Users/johnreilly/Desktop/test.js",
+		"/Users/johnreilly/Desktop/placeslist.html",
+		"/Users/johnreilly/Desktop/place.json",
+		"/Users/johnreilly/Documents/workspace/jaws/graph2/serverless-graphql-blog/package.json",
+		"/Users/johnreilly/Desktop/sample.xml",
+		"/Users/johnreilly/Documents/workspace/jaws/graph1/serverless-graphql-blog/package.json",
+		"/Users/johnreilly/Documents/workspace/jaws/graph1/serverless-graphql-blog/blog/resource/graphql/handler.js",
+		"/Users/johnreilly/Documents/workspace/jaws/graph1/serverless-graphql-blog/blog/s-component.json",
+		"/Users/johnreilly/Documents/workspace/jaws/graph1/serverless-graphql-blog/_meta/resources/s-resources-cf-dev-useast1.json",
+		"/Users/johnreilly/Documents/workspace/graph10/serverless-graphql-blog/s-project.json",
+		"/Users/johnreilly/Documents/workspace/jaws/titan/serverless-graphql-blog/_meta/resources/s-resources-cf-dev-useast1.json",
+		"/Users/johnreilly/Documents/workspace/jaws/titan/serverless-graphql-blog/s-project.json",
+		"/Users/johnreilly/Documents/workspace/jaws/olson/back/modules/olson/readprofile/handler.js",
+		"/Users/johnreilly/Documents/workspace/jaws/olson/back/modules/olson/updatememberpoints/handler.js",
+		"/Users/johnreilly/Documents/workspace/jaws/olson/back/modules/olson/lib/index.js",
+		"/Users/johnreilly/Documents/workspace/jaws/macAlpha/write_to_DynamoDBv3_RQA/write_to_DynamoDBv3_RQA.js",
+		"/Users/johnreilly/Documents/workspace/jaws/olson/back/modules/olson/lib/updateMemberPoints.js",
+		"/Users/johnreilly/Documents/workspace/jaws/olson/back/modules/olson/lib/config.js",
+		"/Users/johnreilly/Documents/workspace/jaws/macAlpha/reservationData_RQA/Address.js",
+		"/Users/johnreilly/Documents/workspace/jaws/olson/back/modules/olson/lib/index_backup_0114_935.js",
+		"/Users/johnreilly/Documents/workspace/jaws/olson/back/modules/olson/updatememberpoints/s-function.json",
+		"/Users/johnreilly/Documents/workspace/jaws/olson/back/modules/olson/readprofile/s-function.json",
+		"/Users/johnreilly/Documents/workspace/jaws/macAlpha/reservationData_RQA/AcceptedPayment.js",
+		"/Users/johnreilly/Documents/workspace/jaws/macAlpha/write_to_DynamoDBv3_RQA/config.js",
+		"/Users/johnreilly/Documents/workspace/jaws/macAlpha/write_to_DynamoDBv3_RQA/node_modules/logger/logger.js",
+		"/Users/johnreilly/Documents/workspace/jaws/olson/s-project.json",
+		"/Users/johnreilly/Documents/workspace/jaws/olson/admin.env",
+		"/Users/johnreilly/Documents/workspace/jaws/olson/cloudformation/resources-cf.json",
+		"/Users/johnreilly/Documents/workspace/jaws/olson/back/modules/olson/s-module.json",
+		"/Users/johnreilly/Documents/workspace/jaws/olson/back/modules/olson/updatememberpoints/event.json",
+		"/Users/johnreilly/Documents/workspace/jaws/olsonAlpha/back/modules/olson/lib/index.js",
+		"/Users/johnreilly/Desktop/index_backup.js",
+		"/Users/johnreilly/Documents/workspace/jaws/olsonAlpha/back/modules/olson/readprofile/event.json",
+		"/Users/johnreilly/Documents/workspace/jaws/olsonAlpha/back/modules/olson/readprofile/s-function.json",
+		"/Users/johnreilly/Documents/workspace/jaws/olsonAlpha/back/modules/olson/readprofile/handler.js",
+		"/Users/johnreilly/Documents/workspace/jaws/macOlson/index.js",
+		"/Users/johnreilly/Documents/workspace/jaws/macAlpha/back/modules/edw/lib/index.js",
+		"/Users/johnreilly/Documents/workspace/jaws/samples/serverless-examples/lib/index.js",
+		"/Users/johnreilly/Documents/workspace/jaws/macAlpha/back/modules/greetings/lib/index.js",
+		"/Users/johnreilly/Documents/workspace/jaws/macAlpha/back/modules/edw/lib/config.js",
+		"/Users/johnreilly/Documents/workspace/jaws/macAlpha/back/modules/edw/writetodynamodb/handler.js",
+		"/Users/johnreilly/Documents/workspace/jaws/macAlpha/back/modules/greetings/hello/handler.js",
+		"/Users/johnreilly/Documents/workspace/jaws/samples/serverless-examples/testget1/handler.js",
+		"/Users/johnreilly/Documents/workspace/jaws/macAlpha/back/modules/edw/writetodynamodb/s-function.json",
+		"/Users/johnreilly/Documents/workspace/jaws/macAlpha/back/modules/edw/s-module.json",
+		"/Users/johnreilly/Documents/workspace/jaws/samples/serverless-examples/lib/controllers/rest.js",
+		"/Users/johnreilly/Documents/workspace/jaws/samples/serverless-examples/lib/models/thing.js",
+		"/Users/johnreilly/Documents/workspace/jaws/macAlpha/back/modules/edw/node_modules/serverless-helpers-js/env/index.js",
+		"/Users/johnreilly/Documents/workspace/jaws/macAlpha/back/modules/edw/package.json",
+		"/Users/johnreilly/Documents/workspace/jaws/macAlpha/back/modules/edw/writetodynamodb/writetodynamodb.js",
+		"/Users/johnreilly/Documents/workspace/jaws/macAlpha/cloudformation/orig-resources-cf.json",
+		"/Users/johnreilly/Documents/workspace/jaws/macAlpha/cloudformation/resources-cf.json",
+		"/Users/johnreilly/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/johnreilly/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/johnreilly/fr/EmployeeDB/public/stylesheets/style.styl",
+		"/Users/johnreilly/fr/EmployeeDB/employee_new.jade",
+		"/Users/johnreilly/fr/EmployeeDB/layout.jade",
+		"/Users/johnreilly/fr/EmployeeDB/index.jade",
+		"/Users/johnreilly/fr/EmployeeDB/app.js"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"user",
+			"USER",
+			"User",
+			"user",
+			"User",
+			"user",
+			"User",
+			"user",
+			"User",
+			"WRDAtaHelper",
+			"airport",
+			"index",
+			"faa",
+			"WRCODES",
+			"FAA",
+			"Airport",
+			"FAA",
+			"Airport",
+			"FAA",
+			"Airport",
+			"handleC",
+			"handleCity",
+			"update",
+			"createCypher",
+			"crypto",
+			"replace",
+			"url",
+			"ftpsync",
+			"createNewPost",
+			"helper",
+			"babel",
+			"readProfile",
+			"respond",
+			"employeeprovider"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"dept",
+			"DEPT",
+			"Dept",
+			"dept",
+			"Dept",
+			"dept",
+			"Dept",
+			"dept",
+			"Dept",
+			"WRIdHelper",
+			"wr",
+			"Member",
+			"WR",
+			"Member",
+			"WR",
+			"Member"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "client/src/app/js/components/depts/edit.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2632,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JSX/JSX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 28.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "sls-graphql.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 289.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

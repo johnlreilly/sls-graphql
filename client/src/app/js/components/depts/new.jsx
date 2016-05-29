@@ -12,30 +12,28 @@ class DeptsNew extends Component {
         event.preventDefault();
 
         const name = this.refs.name.value;
-        const deptname = this.refs.deptname.value;
+        const username = this.refs.deptname.value;
         const email = this.refs.email.value;
-        const password = this.refs.password.value;
-        const street = this.refs.street.value;
-        const city = this.refs.city.value;
-        const state = this.refs.state.value;
-        const postalCode = this.refs.postalCode.value;
-        const country = this.refs.country.value;
-        const latitude = this.refs.latitude.value;
-        const longitude = this.refs.longitude.value;
+        // const street = this.refs.street.value;
+        // const city = this.refs.city.value;
+        // const state = this.refs.state.value;
+        // const postalCode = this.refs.postalCode.value;
+        // const country = this.refs.country.value;
+        // const latitude = this.refs.latitude.value;
+        // const longitude = this.refs.longitude.value;
 
         if (name.length !== 0 && deptname.length !== 0 && email.length !== 0 && password.length !== 0) {
             const dept = {
                 name,
                 deptname,
                 email,
-                password,
-                street,
-                city,
-                state,
-                postalCode,
-                country,
-                latitude,
-                longitude
+                // street,
+                // city,
+                // state,
+                // postalCode,
+                // country,
+                // latitude,
+                // longitude
             };
 
             this.props.createDept(dept);

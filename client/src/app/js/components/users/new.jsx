@@ -35,26 +35,12 @@ class UsersNew extends Component {
             < div className = "four columns offset-by-four" >
             < form onSubmit = { this.handleSubmit.bind(this) } >
             < h1 > Add user < /h1> < hr / >
-            < input type = "text"
-            placeholder = "Name"
-            className = "u-full-width"
-            ref = "name" / >
-            < input type = "text"
-            placeholder = "Username"
-            className = "u-full-width"
-            ref = "username" / >
-            < input type = "email"
-            placeholder = "E-Mail"
-            className = "u-full-width"
-            ref = "email" / >
-            < input type = "password"
-            placeholder = "Password"
-            className = "u-full-width"
-            ref = "password" / >
-            < input type = "submit"
-            className = "button button-primary" / >
-            < Link to = "/"
-            className = "u-pull-right button" > Cancel < /Link> < /form> < /div> < /div>
+            < input type = "text" placeholder = "Name" className = "u-full-width" ref = "name" / >
+            < input type = "text" placeholder = "Username" className = "u-full-width" ref = "username" / >
+            < input type = "email" placeholder = "E-Mail" className = "u-full-width" ref = "email" / >
+            < input type = "password" placeholder = "Password" className = "u-full-width" ref = "password" / >
+            < input type = "submit" className = "button button-primary" / >
+            < Link to = "/" className = "u-pull-right button" > Cancel < /Link> < /form> < /div> < /div>
         );
     }
 }

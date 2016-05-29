@@ -21,9 +21,8 @@ export function createDept(dept) {
     `mutation createNewDept {
       dept: createDept (
         name: "${dept.name}",
-        deptname: "${dept.deptname}"
         email: "${dept.email}"
-        password: "${dept.password}"
+        street: "${dept.street }"
         city: "${dept.city}"
         state: "${dept.state}"
         postalCode: "${dept.postalCode}"
@@ -34,9 +33,7 @@ export function createDept(dept) {
       {
         id
         name
-        deptname
         email
-        password
         street
         city
         state
@@ -68,10 +65,8 @@ export function getDepts() {
   const query = { "query":
     `{
       depts {
-        deptname
         name
         email
-        password
         street
         city
         state
@@ -79,6 +74,7 @@ export function getDepts() {
         country
         latitude
         longitude
+        token
       }
     }`
   };
@@ -105,16 +101,8 @@ export function getDept(deptname) {
       {
         id
         name
-        deptname
         email
-        password
-        street
-        city
-        state
-        postalCode
-        country
-        latitude
-        longitude
+        token
       }
     }`
   };
@@ -140,20 +128,18 @@ export function updateDept(dept) {
       dept: updateDept (
         name: "${dept.name}"
         email: "${dept.email}"
-        password: "${dept.password}"
         city: "${dept.city}"
         state: "${dept.state}"
         postalCode: "${dept.postalCode}"
         country: "${dept.country}"
         latitude: "${dept.latitude}"
         longitude: "${dept.longitude}"
+        token: "${dept.token}"
       )
       {
         id
         name
-        deptname
         email
-        password
         street
         city
         state
@@ -161,6 +147,7 @@ export function updateDept(dept) {
         country
         latitude
         longitude
+        token
       }
     }`
   };
@@ -185,7 +172,7 @@ export function deleteDept(token) {
         token: "${token}"
       )
       {
-        deptname
+        name
       }
     }`
   };

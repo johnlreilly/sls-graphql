@@ -20,7 +20,6 @@ class DeptsIndex extends Component {
             <table className="u-full-width">
               <thead>
                 <tr>
-                  <th>Deptname</th>
                   <th>Name</th>
                   <th>E-Mail</th>
                 </tr>
@@ -28,9 +27,9 @@ class DeptsIndex extends Component {
               <tbody>
               {depts.map((dept) => {
                 return (
-                  <tr key={'dept-' + dept.deptname}>
+                  <tr key={'dept-' + dept.name}>
                     <td>
-                      <Link to={ 'depts/' + dept.deptname + '/show' }>{dept.deptname}</Link>
+                      <Link to={ 'depts/' + dept.name + '/show' }>{dept.deptname}</Link>
                     </td>
                     <td>{dept.name}</td>
                     <td>{dept.email}</td>
