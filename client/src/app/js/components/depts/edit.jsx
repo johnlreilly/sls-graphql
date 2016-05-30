@@ -67,4 +67,4 @@ class DeptsEdit extends Component {
 
 const mapStateToProps = ({depts: {currentDept}}) => ({dept: currentDept});
 
-export default connect(mapStateToProps, {updateDept, deleteDept, logoutDept})(DeptsEdit);
+export default connect(mapStateToProps, {updateDept, deleteDept})(DeptsEdit);

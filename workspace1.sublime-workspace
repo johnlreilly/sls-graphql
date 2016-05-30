@@ -15,21 +15,6 @@
 	},
 	"buffers":
 	[
-		{
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/src/app/js/components/depts/edit.jsx",
-			"settings":
-			{
-				"buffer_size": 2632,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -116,35 +101,51 @@
 	"expanded_folders":
 	[
 		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/back",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/back/api",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/back/api/lib",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/back/api/lib/graphql",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/back/api/lib/graphql/collections",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/back/api/lib/graphql/collections/depts",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/back/api/lib/graphql/collections/users",
 		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client",
 		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src",
 		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app",
 		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js",
 		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/components",
-		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/components/depts"
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/components/depts",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/components/users"
 	],
 	"file_history":
 	[
-		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/components/depts/show.jsx",
-		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/actions/constants.js",
-		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/actions/users.js",
-		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/actions/depts.js",
-		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/components/depts/new.jsx",
-		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/s-resources-cf.json",
-		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/components/depts/edit.jsx",
-		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/routes.jsx",
-		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/components/depts/index.jsx",
-		"/Users/johnreilly/Library/Application Support/Sublime Text 3/Packages/jsfmt/jsfmt.sublime-settings",
-		"/Users/johnreilly/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
-		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/components/users/new.jsx",
-		"/Users/johnreilly/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
 		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/back/api/lib/graphql/collections/depts/mutations.js",
 		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/back/api/lib/graphql/collections/depts/queries.js",
 		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/back/api/lib/graphql/collections/depts/resolves.js",
 		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/back/api/lib/graphql/collections/depts/type.js",
 		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/back/api/lib/graphql/collections/depts/validate.js",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/back/api/lib/graphql/collections/users/mutations.js",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/back/api/lib/graphql/index.js",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/back/api/lib/graphql/schema.js",
 		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/back/api/lib/auth.js",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/back/api/lib/dynamodb.js",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/actions/users.js",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/components/users/index.jsx",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/components/users/new.jsx",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/components/users/show.jsx",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/routes.jsx",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/components/depts/index.jsx",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/components/depts/new.jsx",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/components/depts/show.jsx",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/actions/constants.js",
 		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/actions/index.js",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/actions/error.js",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/actions/depts.js",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/webpack.config.js",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/client/src/app/js/components/depts/edit.jsx",
+		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/s-resources-cf.json",
+		"/Users/johnreilly/Library/Application Support/Sublime Text 3/Packages/jsfmt/jsfmt.sublime-settings",
+		"/Users/johnreilly/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/Users/johnreilly/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
 		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/_meta/variables/s-variables-common.json",
 		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/_meta/variables/s-variables-dev-useast1.json",
 		"/Users/johnreilly/Documents/workspace/jaws/sls-graphql/s-project.json",
@@ -244,19 +245,11 @@
 		"/Users/johnreilly/Documents/workspace/jaws/macAlpha/back/modules/edw/node_modules/serverless-helpers-js/env/index.js",
 		"/Users/johnreilly/Documents/workspace/jaws/macAlpha/back/modules/edw/package.json",
 		"/Users/johnreilly/Documents/workspace/jaws/macAlpha/back/modules/edw/writetodynamodb/writetodynamodb.js",
-		"/Users/johnreilly/Documents/workspace/jaws/macAlpha/cloudformation/orig-resources-cf.json",
-		"/Users/johnreilly/Documents/workspace/jaws/macAlpha/cloudformation/resources-cf.json",
-		"/Users/johnreilly/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/Users/johnreilly/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/johnreilly/fr/EmployeeDB/public/stylesheets/style.styl",
-		"/Users/johnreilly/fr/EmployeeDB/employee_new.jade",
-		"/Users/johnreilly/fr/EmployeeDB/layout.jade",
-		"/Users/johnreilly/fr/EmployeeDB/index.jade",
-		"/Users/johnreilly/fr/EmployeeDB/app.js"
+		"/Users/johnreilly/Documents/workspace/jaws/macAlpha/cloudformation/orig-resources-cf.json"
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -268,9 +261,10 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": true,
+		"case_sensitive": false,
 		"find_history":
 		[
+			"logoutDept",
 			"user",
 			"USER",
 			"User",
@@ -338,66 +332,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "client/src/app/js/components/depts/edit.jsx",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2632,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JSX/JSX.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -482,7 +418,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 289.0,
+	"side_bar_width": 227.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
