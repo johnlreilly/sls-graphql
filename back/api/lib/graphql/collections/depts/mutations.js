@@ -14,7 +14,6 @@ module.exports = {
     description: 'Create Dept',
     args: {
       deptname: { type: new GraphQLNonNull(GraphQLString) },
-      name: { type: new GraphQLNonNull(GraphQLString) },
       password: { type: new GraphQLNonNull(GraphQLString) },
       email: { type: new GraphQLNonNull(GraphQLString) }
     },
@@ -27,12 +26,12 @@ module.exports = {
     description: 'Update Dept',
     args: {
       token: { type: new GraphQLNonNull(GraphQLString) },
-      name: { type: new GraphQLNonNull(GraphQLString) },
-      email: { type: new GraphQLNonNull(GraphQLString) },
-      password: { type: new GraphQLNonNull(GraphQLString) }
+      deptname: { type: new GraphQLNonNull(GraphQLString) },
+      password: { type: new GraphQLNonNull(GraphQLString) },
+      email: { type: new GraphQLNonNull(GraphQLString) }
     },
     resolve(source, args) {
-      return validate(args).then(() => authorize(args.token, ['UPDATE_USER'])).then((dept) => resolves.update(dept, args));
+      return validate(args).then(() => authorize(args.token, ['UPDATE_DEPT'])).then((dept) => resolves.update(dept, args));
     }
   },
   deleteDept: {
@@ -42,7 +41,7 @@ module.exports = {
       token: { type: new GraphQLNonNull(GraphQLString) }
     },
     resolve(source, args) {
-      return validate(args).then(() => authorize(args.token, ['DELETE_USER'])).then((dept) => resolves.remove(dept));
+      return validate(args).then(() => authorize(args.token, ['DELETE_DEPT'])).then((dept) => resolves.remove(dept));
     }
   }
 }

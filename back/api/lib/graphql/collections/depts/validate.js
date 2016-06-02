@@ -4,12 +4,8 @@ const Promise = require('bluebird');
 
 let validate = {
   deptname: (deptname) => {
-    let re = /^[a-z0-9_-]{3,16}$/;
+    let re = /^[a-z0-9_-]{3,25}$/;
     if (!re.test(deptname)) return Promise.reject('invalid deptname');
-  },
-  password: (password) => {
-    let re = /[a-zA-Z]\w{3,14}$/;
-    if (!re.test(password)) return Promise.reject('invalid password');
   },
   email: (email) => {
     let re = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
@@ -22,7 +18,6 @@ let validate = {
     return;
   }
 };
-
 
 module.exports = (data) => {
   Object.keys(data).forEach((d) => {validate[d](data[d])});

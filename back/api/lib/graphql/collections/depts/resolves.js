@@ -15,7 +15,7 @@ const deptsTable = projectName + '-depts-' + stage;
 module.exports = {
   create(dept) {
     dept.id = uuid.v1();
-    dept.permissions = ['UPDATE_USER', 'DELETE_USER'];
+    dept.permissions = ['UPDATE_DEPT', 'DELETE_DEPT'];
 
     // generated salted hash with bcryptjs with 10 work factor
     dept.password_hash = bcryptjs.hashSync(dept.password, 10);
@@ -42,37 +42,6 @@ module.exports = {
     .then(() => dept);
   },
 
-  login(args) {
-    const deptname = args.deptname;
-    const password = args.password;
-
-    return db('get', {
-        TableName: deptsTable,
-        Key: {deptname},
-        AttributesToGet: [
-          'id',
-          'name',
-          'deptname',
-          'email',
-          'permissions',
-          'password_hash'
-        ]
-      })
-      .then(reply => {
-        const Item = reply.Item;
-        if (!Item) return Promise.reject('Dept not found');
-
-        let match = bcryptjs.compareSync(password, Item.password_hash);
-        if (!match) return Promise.reject('invalid password');
-
-        delete Item.password_hash;
-
-        Item.token = authenticate(Item);
-
-        return Item;
-      });
-  },
-
   get(deptname) {
     return db('get', {
       TableName: deptsTable,
@@ -80,7 +49,6 @@ module.exports = {
       AttributesToGet: [
         'id',
         'deptname',
-        'name',
         'email'
       ]
     }).then(reply => reply.Item);
@@ -92,17 +60,15 @@ module.exports = {
       AttributesToGet: [
         'id',
         'deptname',
-        'name',
         'email'
       ]
     }).then(reply => reply.Items);
   },
 
   update(dept, obj) {
-
     // update data
+    dept.deptname = obj.name || dept.deptname;
     dept.email = obj.email || dept.email;
-    dept.name = obj.name || dept.name;
     dept.password_hash = bcryptjs.hashSync(obj.password, 10);
 
     return db('put', {

@@ -10,6 +10,7 @@ export const UPDATE_USER = 'UPDATE_USER';
 export const DELETE_USER = 'DELETE_USER';
 export const LOGIN_USER = 'LOGIN_USER';
 export const LOGOUT_USER = 'LOGOUT_USER';
+// depts
 export const DEPTS = 'GET_DEPTS';
 export const GET_DEPT = 'GET_DEPT';
 export const CREATE_DEPT = 'CREATE_DEPT';
