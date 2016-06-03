@@ -1,9 +1,9 @@
-import 'whatwg-fetch';
-import _ from 'lodash';
-import { push } from 'react-router-redux';
+import 'whatwg-fetch'
+import _ from 'lodash'
+import { push } from 'react-router-redux'
 
-import { API_URL } from './index';
-import {resetError} from './error';
+import { API_URL } from './index'
+import {resetError} from './error'
 
 import {
   ERROR,
@@ -14,15 +14,15 @@ import {
   DELETE_DEPT
   // LOGIN_DEPT,
   // LOGOUT_DEPT
-} from './constants';
+} from './constants'
 
-export function createDept(dept) {
-  const query = { "query":
+export function createDept (dept) {
+  const query = { 'query':
     `mutation createNewDept {
       dept: createDept (
         name: "${dept.name}",
         email: "${dept.email}"
-        street: "${dept.street }"
+        street: "${dept.street}"
         city: "${dept.city}"
         state: "${dept.state}"
         postalCode: "${dept.postalCode}"
@@ -43,7 +43,7 @@ export function createDept(dept) {
         longitude
       }
     }`
-  };
+  }
 
   return (dispatch) => fetch(`${API_URL}/data/`, {
     method: 'POST',
@@ -58,11 +58,11 @@ export function createDept(dept) {
   .catch(exception => dispatch({
     type: ERROR,
     payload: exception.message
-  }));
+  }))
 }
 
-export function getDepts() {
-  const query = { "query":
+export function getDepts () {
+  const query = { 'query':
     `{
       depts {
         name
@@ -77,7 +77,7 @@ export function getDepts() {
         token
       }
     }`
-  };
+  }
 
   return (dispatch) => fetch(`${API_URL}/data/`, {
     method: 'POST',
@@ -91,11 +91,11 @@ export function getDepts() {
   .catch(exception => dispatch({
     type: ERROR,
     payload: exception.message
-  }));
+  }))
 }
 
-export function getDept(deptname) {
-  const query = { "query":
+export function getDept (deptname) {
+  const query = { 'query':
     `{
       dept(deptname: "${deptname}")
       {
@@ -105,7 +105,7 @@ export function getDept(deptname) {
         token
       }
     }`
-  };
+  }
 
   return (dispatch) => fetch(`${API_URL}/data/`, {
     method: 'POST',
@@ -119,11 +119,11 @@ export function getDept(deptname) {
   .catch(exception => dispatch({
     type: ERROR,
     payload: exception.message
-  }));
+  }))
 }
 
-export function updateDept(dept) {
-  const query = { "query":
+export function updateDept (dept) {
+  const query = { 'query':
     `mutation updateExistingDept {
       dept: updateDept (
         name: "${dept.name}"
@@ -150,7 +150,7 @@ export function updateDept(dept) {
         token
       }
     }`
-  };
+  }
 
   return (dispatch) => fetch(`${API_URL}/data/`, {
     method: 'POST',
@@ -162,11 +162,11 @@ export function updateDept(dept) {
   .catch(exception => dispatch({
     type: ERROR,
     payload: exception.message
-  }));
+  }))
 }
 
-export function deleteDept(token) {
-  const query = { "query":
+export function deleteDept (token) {
+  const query = { 'query':
     `mutation deleteExistingDept {
       dept: deleteDept (
         token: "${token}"
@@ -175,7 +175,7 @@ export function deleteDept(token) {
         name
       }
     }`
-  };
+  }
 
   return (dispatch) => fetch(`${API_URL}/data/`, {
     method: 'POST',
@@ -189,7 +189,7 @@ export function deleteDept(token) {
   .catch(exception => dispatch({
     type: ERROR,
     payload: exception.message
-  }));
+  }))
 }
 
 // export function loginDept(dept) {
@@ -207,10 +207,10 @@ export function deleteDept(token) {
 //         token
 //       }
 //     }`
-//   };
+//   }
 
 //   return (dispatch) => {
-//     dispatch(resetError());
+//     dispatch(resetError())
 
 //     return fetch(`${API_URL}/data/`, {
 //       method: 'POST',
@@ -224,14 +224,14 @@ export function deleteDept(token) {
 //     .catch(exception => dispatch({
 //       type: ERROR,
 //       payload: exception.message
-//     }));
+//     }))
 
 //   }
 // }
 
 // export function logoutDept() {
 //   return dispatch => {
-//     dispatch({type: LOGOUT_DEPT});
-//     dispatch(push('/'));
+//     dispatch({type: LOGOUT_DEPT})
+//     dispatch(push('/'))
 //   }
 // }
