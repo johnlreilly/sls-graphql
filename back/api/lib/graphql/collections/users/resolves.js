@@ -1,26 +1,26 @@
-'use strict';
+'use strict'
 
-const Promise = require('bluebird');
-const uuid = require('uuid');
-const bcryptjs = require('bcryptjs');
-const db = require('../../../dynamodb');
-const authenticate = require('../../../auth').authenticate;
+const Promise = require('bluebird')
+const uuid = require('uuid')
+const bcryptjs = require('bcryptjs')
+const db = require('../../../dynamodb')
+const authenticate = require('../../../auth').authenticate
 const invoke = require('../../../invoke')
-const _ = require('lodash');
+const _ = require('lodash')
 
-const stage = process.env.SERVERLESS_STAGE;
-const projectName = process.env.SERVERLESS_PROJECT;
-const usersTable = projectName + '-users-' + stage;
+const stage = process.env.SERVERLESS_STAGE
+const projectName = process.env.SERVERLESS_PROJECT
+const usersTable = projectName + '-users-' + stage
 
 module.exports = {
-  create(user) {
-    user.id = uuid.v1();
-    user.permissions = ['UPDATE_USER', 'DELETE_USER'];
+  create (user) {
+    user.id = uuid.v1()
+    user.permissions = ['UPDATE_USER', 'DELETE_USER']
 
     // generated salted hash with bcryptjs with 10 work factor
-    user.password_hash = bcryptjs.hashSync(user.password, 10);
+    user.password_hash = bcryptjs.hashSync(user.password, 10)
 
-    delete user.password; // don't save plain password!
+    delete user.password // don't save plain password!
 
     return db('put', {
       TableName: usersTable,
@@ -33,47 +33,47 @@ module.exports = {
       // this should be delayed for 50ms
       // let's do something with the response
       if (response.result === 'success') {
-        console.log("response data:", response);
+        console.log('response data:', response)
       } else {
-        return Promise.reject(new Error("Something went wrong :("));
+        return Promise.reject(new Error('Something went wrong :(   '))
       }
     }))
     // finally return the user record
-    .then(() => user);
+    .then(() => user)
   },
 
-  login(args) {
-    const username = args.username;
-    const password = args.password;
+  login (args) {
+    const username = args.username
+    const password = args.password
 
     return db('get', {
-        TableName: usersTable,
-        Key: {username},
-        AttributesToGet: [
-          'id',
-          'name',
-          'username',
-          'email',
-          'permissions',
-          'password_hash'
-        ]
-      })
+      TableName: usersTable,
+      Key: {username},
+      AttributesToGet: [
+        'id',
+        'name',
+        'username',
+        'email',
+        'permissions',
+        'password_hash'
+      ]
+    })
       .then(reply => {
-        const Item = reply.Item;
-        if (!Item) return Promise.reject('User not found');
+        const Item = reply.Item
+        if (!Item) return Promise.reject('User not found')
 
-        let match = bcryptjs.compareSync(password, Item.password_hash);
-        if (!match) return Promise.reject('invalid password');
+        let match = bcryptjs.compareSync(password, Item.password_hash)
+        if (!match) return Promise.reject('invalid password')
 
-        delete Item.password_hash;
+        delete Item.password_hash
 
-        Item.token = authenticate(Item);
+        Item.token = authenticate(Item)
 
-        return Item;
-      });
+        return Item
+      })
   },
 
-  get(username) {
+  get (username) {
     return db('get', {
       TableName: usersTable,
       Key: {username},
@@ -83,10 +83,10 @@ module.exports = {
         'name',
         'email'
       ]
-    }).then(reply => reply.Item);
+    }).then(reply => reply.Item)
   },
 
-  getAll() {
+  getAll () {
     return db('scan', {
       TableName: usersTable,
       AttributesToGet: [
@@ -95,26 +95,25 @@ module.exports = {
         'name',
         'email'
       ]
-    }).then(reply => reply.Items);
+    }).then(reply => reply.Items)
   },
 
-  update(user, obj) {
-
+  update (user, obj) {
     // update data
-    user.email = obj.email || user.email;
-    user.name = obj.name || user.name;
-    user.password_hash = bcryptjs.hashSync(obj.password, 10);
+    user.email = obj.email || user.email
+    user.name = obj.name || user.name
+    user.password_hash = bcryptjs.hashSync(obj.password, 10)
 
     return db('put', {
       TableName: usersTable,
       Item: user
-    }).then(() => _.merge({}, user, obj));
+    }).then(() => _.merge({}, user, obj))
   },
 
-  remove(user) {
+  remove (user) {
     return db('delete', {
       TableName: usersTable,
       Key: { username: user.username }
-    });
+    })
   }
-};
+}

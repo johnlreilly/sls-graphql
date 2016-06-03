@@ -1,7 +1,7 @@
-'use strict';
+'use strict'
 
-const GraphQLObjectType = require('graphql').GraphQLObjectType;
-const GraphQLString = require('graphql').GraphQLString;
+const GraphQLObjectType = require('graphql').GraphQLObjectType
+const GraphQLString = require('graphql').GraphQLString
 
 module.exports = new GraphQLObjectType({
   name: 'User',
@@ -13,4 +13,4 @@ module.exports = new GraphQLObjectType({
     email: {type: GraphQLString},
     token: {type: GraphQLString}
   })
-});
+})

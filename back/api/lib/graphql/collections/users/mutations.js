@@ -1,12 +1,12 @@
-'use strict';
+'use strict'
 
-const GraphQLString = require('graphql').GraphQLString;
-const GraphQLNonNull = require('graphql').GraphQLNonNull;
+const GraphQLString = require('graphql').GraphQLString
+const GraphQLNonNull = require('graphql').GraphQLNonNull
 
-const UserType = require('./type');
-const validate = require('./validate');
-const authorize = require('../../../auth').authorize;
-const resolves = require('./resolves');
+const UserType = require('./type')
+const validate = require('./validate')
+const authorize = require('../../../auth').authorize
+const resolves = require('./resolves')
 
 module.exports = {
   createUser: {
@@ -18,8 +18,8 @@ module.exports = {
       password: { type: new GraphQLNonNull(GraphQLString) },
       email: { type: new GraphQLNonNull(GraphQLString) }
     },
-    resolve(source, args) {
-      return validate(args).then(() => resolves.create(args));
+    resolve (source, args) {
+      return validate(args).then(() => resolves.create(args))
     }
   },
   loginUser: {
@@ -29,8 +29,8 @@ module.exports = {
       username: { type: new GraphQLNonNull(GraphQLString) },
       password: { type: new GraphQLNonNull(GraphQLString) }
     },
-    resolve(source, args) {
-      return validate(args).then(() => resolves.login(args));
+    resolve (source, args) {
+      return validate(args).then(() => resolves.login(args))
     }
   },
   updateUser: {
@@ -42,8 +42,8 @@ module.exports = {
       email: { type: new GraphQLNonNull(GraphQLString) },
       password: { type: new GraphQLNonNull(GraphQLString) }
     },
-    resolve(source, args) {
-      return validate(args).then(() => authorize(args.token, ['UPDATE_USER'])).then((user) => resolves.update(user, args));
+    resolve (source, args) {
+      return validate(args).then(() => authorize(args.token, ['UPDATE_USER'])).then((user) => resolves.update(user, args))
     }
   },
   deleteUser: {
@@ -52,8 +52,8 @@ module.exports = {
     args: {
       token: { type: new GraphQLNonNull(GraphQLString) }
     },
-    resolve(source, args) {
-      return validate(args).then(() => authorize(args.token, ['DELETE_USER'])).then((user) => resolves.remove(user));
+    resolve (source, args) {
+      return validate(args).then(() => authorize(args.token, ['DELETE_USER'])).then((user) => resolves.remove(user))
     }
   }
 }

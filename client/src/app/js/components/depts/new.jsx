@@ -11,8 +11,8 @@ class DeptsNew extends Component {
     handleSubmit(event) {
         event.preventDefault();
 
-        const name = this.refs.name.value;
-        const username = this.refs.deptname.value;
+        // const name = this.refs.name.value;
+        const deptname = this.refs.deptname.value;
         const email = this.refs.email.value;
         // const street = this.refs.street.value;
         // const city = this.refs.city.value;

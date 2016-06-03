@@ -45,7 +45,7 @@ class DeptsEdit extends Component {
           <h1>Edit Profile</h1>
           <hr />
           <form onSubmit={this.handleSubmit.bind(this)}>
-            <input type="text" placeholder="Name" className="u-full-width" ref="name" defaultValue={dept.name}/>
+            <input type="text" placeholder="Name" className="u-full-width" ref="name" defaultValue={dept.deptname}/>
             <input type="email" placeholder="E-Mail" className="u-full-width" ref="email" defaultValue={dept.email} />
             <input type="street" placeholder="Street" className="u-full-width" ref="street" />
             <input type="text" placeholder="City" className="u-full-width" ref="city" />

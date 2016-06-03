@@ -30,7 +30,7 @@ class DeptsIndex extends Component {
                 return (
                   <tr key={'dept-' + dept.name}>
                     <td>
-                      <Link to={ 'depts/' + dept.username + '/show' }>{dept.deptname}</Link>
+                      <Link to={ 'depts/' + dept.deptname + '/show' }>{dept.deptname}</Link>
                     </td>
                     <td>{dept.name}</td>
                     <td>{dept.email}</td>

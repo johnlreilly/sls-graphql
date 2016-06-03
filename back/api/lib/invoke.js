@@ -1,13 +1,13 @@
-'use strict';
+'use strict'
 
-const Promise = require('bluebird');
-const _ = require('lodash');
-const Lambda = require('aws-sdk').Lambda;
+const Promise = require('bluebird')
+const _ = require('lodash')
+const Lambda = require('aws-sdk').Lambda
 
 const lambda = new Lambda({
   region: process.env.SERVERLESS_REGION,
   sessionToken: process.env.AWS_SESSION_TOKEN
-});
+})
 
 /**
  * Invokes the project functions
@@ -19,12 +19,12 @@ const lambda = new Lambda({
 
 module.exports = (name, data, responseHandler) => {
   if (arguments.length === 2 && _.isFunction(arguments[1])) {
-    responseHandler = arguments[1];
-    data = {};
+    responseHandler = arguments[1]
+    data = {}
   }
 
-  const FunctionName = process.env.SERVERLESS_PROJECT + '-' + name;
-  const InvocationType = responseHandler ? 'RequestResponse' : 'Event';
+  const FunctionName = process.env.SERVERLESS_PROJECT + '-' + name
+  const InvocationType = responseHandler ? 'RequestResponse' : 'Event'
 
   const params = {
     FunctionName,
@@ -32,10 +32,10 @@ module.exports = (name, data, responseHandler) => {
     LogType: 'None',
     Payload: new Buffer(JSON.stringify(data)),
     Qualifier: process.env.SERVERLESS_STAGE
-  };
+  }
 
   return Promise
     .fromCallback(cb => lambda.invoke(params, cb))
     .then(reply => reply.Payload ? JSON.parse(reply.Payload) : {})
-    .then(responseHandler);
+    .then(responseHandler)
 }

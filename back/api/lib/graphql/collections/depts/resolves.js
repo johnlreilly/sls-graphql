@@ -1,26 +1,26 @@
-'use strict';
+'use strict'
 
-const Promise = require('bluebird');
-const uuid = require('uuid');
-const bcryptjs = require('bcryptjs');
-const db = require('../../../dynamodb');
-const authenticate = require('../../../auth').authenticate;
+const Promise = require('bluebird')
+const uuid = require('uuid')
+const bcryptjs = require('bcryptjs')
+const db = require('../../../dynamodb')
+const authenticate = require('../../../auth').authenticate
 const invoke = require('../../../invoke')
-const _ = require('lodash');
+const _ = require('lodash')
 
-const stage = process.env.SERVERLESS_STAGE;
-const projectName = process.env.SERVERLESS_PROJECT;
-const deptsTable = projectName + '-depts-' + stage;
+const stage = process.env.SERVERLESS_STAGE
+const projectName = process.env.SERVERLESS_PROJECT
+const deptsTable = projectName + '-depts-' + stage
 
 module.exports = {
-  create(dept) {
-    dept.id = uuid.v1();
-    dept.permissions = ['UPDATE_DEPT', 'DELETE_DEPT'];
+  create (dept) {
+    dept.id = uuid.v1()
+    dept.permissions = ['UPDATE_DEPT', 'DELETE_DEPT']
 
     // generated salted hash with bcryptjs with 10 work factor
-    dept.password_hash = bcryptjs.hashSync(dept.password, 10);
+    dept.password_hash = bcryptjs.hashSync(dept.password, 10)
 
-    delete dept.password; // don't save plain password!
+    delete dept.password // don't save plain password!
 
     return db('put', {
       TableName: deptsTable,
@@ -33,16 +33,16 @@ module.exports = {
       // this should be delayed for 50ms
       // let's do something with the response
       if (response.result === 'success') {
-        console.log("response data:", response);
+        console.log('response data:', response)
       } else {
-        return Promise.reject(new Error("Something went wrong :("));
+        return Promise.reject(new Error('Something went wrong :(     '))
       }
     }))
     // finally return the dept record
-    .then(() => dept);
+    .then(() => dept)
   },
 
-  get(deptname) {
+  get (deptname) {
     return db('get', {
       TableName: deptsTable,
       Key: {deptname},
@@ -51,10 +51,10 @@ module.exports = {
         'deptname',
         'email'
       ]
-    }).then(reply => reply.Item);
+    }).then(reply => reply.Item)
   },
 
-  getAll() {
+  getAll () {
     return db('scan', {
       TableName: deptsTable,
       AttributesToGet: [
@@ -62,25 +62,25 @@ module.exports = {
         'deptname',
         'email'
       ]
-    }).then(reply => reply.Items);
+    }).then(reply => reply.Items)
   },
 
-  update(dept, obj) {
+  update (dept, obj) {
     // update data
-    dept.deptname = obj.name || dept.deptname;
-    dept.email = obj.email || dept.email;
-    dept.password_hash = bcryptjs.hashSync(obj.password, 10);
+    dept.deptname = obj.name || dept.deptname
+    dept.email = obj.email || dept.email
+    dept.password_hash = bcryptjs.hashSync(obj.password, 10)
 
     return db('put', {
       TableName: deptsTable,
       Item: dept
-    }).then(() => _.merge({}, dept, obj));
+    }).then(() => _.merge({}, dept, obj))
   },
 
-  remove(dept) {
+  remove (dept) {
     return db('delete', {
       TableName: deptsTable,
       Key: { deptname: dept.deptname }
-    });
+    })
   }
-};
+}
